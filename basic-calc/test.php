@@ -1,11 +1,15 @@
 <?php 
+// lower strictness of error reporting
 error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT);
 
+// declare and initialize variables
 $op_name = '';
 $op_symbol = '';
 $num1 = '';
 $num2 = '';
 $message = '';
+
+// if there are inputs, compute result and create message
 if($_GET['op']) {
     $op_name = $_GET['op'];
     $num1 = $_GET['n1'];
